@@ -24,6 +24,7 @@
            <link rel="stylesheet" href="CSS/cart.css">
            <link rel="stylesheet" href="CSS/products.css">
            <link rel="stylesheet" href="CSS/responsive.css">
+           <link rel="stylesheet" href="CSS/orders.css">
     </head>
 
     <body>
@@ -88,29 +89,108 @@
 
                      </ul>
 
-                     <!-- Navigation Actions -->
-                      <div class="nav-actions">
+                        <!-- =========================================
+                            NAVIGATION ACTIONS
+                        ========================================= -->
 
-                        <a href="#"  class="nav-icon" aria-label="Search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
+                        <div class="nav-actions">
 
-                        <a href="about.html"  class="nav-icon" aria-label="Account">
-                            <i class="fa-regular fa-user"></i>
-                        </a>
-                        
-                        <a href="wishlist.html"  class="nav-icon" aria-label="Wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </a>
+                            <!-- SEARCH -->
+                            <a
+                                href="#"
+                                class="nav-icon"
+                                aria-label="Search"
+                            >
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
 
-                        <a href="cart.html"  class="nav-icon" aria-label="Shopping Cart">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </a>
-                      </div>
 
-                </div>
+                            <!-- =====================================
+                                ACCOUNT DROPDOWN
+                            ====================================== -->
 
-            </nav>
+                            <div class="account-dropdown">
+
+                                <!-- ACCOUNT ICON -->
+
+                                <button
+                                    type="button"
+                                    class="nav-icon account-toggle"
+                                    aria-label="Account"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
+
+
+                                <!-- ACCOUNT MENU -->
+
+                                <div class="account-menu">
+
+                                    <!-- ORDERS -->
+
+                                    <a href="orders.html">
+
+                                        <i class="fa-solid fa-box"></i>
+
+                                        <span>
+                                            Orders
+                                        </span>
+
+                                    </a>
+
+
+                                    <!-- MY ACCOUNT -->
+
+                                    <a href="about.html">
+
+                                        <i class="fa-regular fa-user"></i>
+
+                                        <span>
+                                            My Account
+                                        </span>
+
+                                    </a>
+
+
+                                    <!-- WISHLIST -->
+
+                                    <a href="wishlist.html">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                        <span>
+                                            Wishlist
+                                        </span>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <!-- =====================================
+                                CART
+                            ====================================== -->
+
+                            <a
+                                href="cart.html"
+                                class="nav-icon"
+                                aria-label="Shopping Cart"
+                            >
+
+                                <i class="fa-solid fa-bag-shopping"></i>
+
+                                <span
+                                    class="cart-count"
+                                    id="cartCount"
+                                >
+                                    0
+                                </span>
+
+                            </a>
+
+                        </div>
 
          </header>
 
@@ -335,7 +415,7 @@
                             <div class="launch-image">
 
                                 <img 
-                                    src="images/Renew collection/Renew Bakuchiol Cream.jpg"
+                                    src="images/Renew collection/Renew collection.jpg"
                                     alt="LUNEA Renew Retinol and Bakuchiol Collection"
                                 >
 
@@ -354,7 +434,7 @@
                                 </p>
 
                                 <h3>
-                                    Your Nighttime<br>
+                                    Your Night time<br>
                                     Ritual.
                                 </h3>
 
@@ -363,7 +443,7 @@
                                 </p>
 
                                 <span class="launch-description">
-                                    A restorative nighttime ritual designed
+                                    A restorative night time ritual designed
                                     to smooth, renew, and replenish your skin
                                     while you rest.
                                 </span>
@@ -897,7 +977,7 @@
                             </span>
 
                             <h2 class="section-title">
-                                Minimal Care, <br>
+                                Minimal Care,
                                 Maximum Confidence
                             </h2>
 
