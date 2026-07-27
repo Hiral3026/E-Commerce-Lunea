@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================
+         META INFORMATION
+    ========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Account | LUNEA</title>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS FILES
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="CSS/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="CSS/account.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         ANNOUNCEMENT BAR
+    ========================================== -->
+
+    <div class="announcement-bar">
+
+        <div class="announcement-track">
+
+            <span>
+                Complimentary shipping on orders above ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+            <span>
+                Complimentary shipping on orders above ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+            <span>
+                Complimentary shipping on orders above ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+
+        <nav
+            class="navbar"
+            aria-label="Primary Navigation"
+        >
+
+            <div class="container">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    LUNEA
+                </a>
+
+
+                <!-- NAVIGATION LINKS -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#collections">
+                            Collections
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- =========================================
+                     NAVIGATION ACTIONS
+                ========================================== -->
+
+                <div class="nav-actions">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-container">
+
+                        <button
+                            type="button"
+                            class="nav-icon search-toggle"
+                            aria-label="Open Search"
+                            aria-expanded="false"
+                        >
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- ACCOUNT -->
+
+                    <div class="account-dropdown">
+
+                        <button
+                            type="button"
+                            class="nav-icon account-toggle"
+                            aria-label="Account"
+                            aria-expanded="false"
+                        >
+
+                            <i class="fa-regular fa-user"></i>
+
+                        </button>
+
+
+                        <!-- ACCOUNT MENU -->
+
+                        <div class="account-menu">
+
+                            <a
+                                href="account.html"
+                                class="active"
+                            >
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <span>
+                                    My Account
+                                </span>
+
+                            </a>
+
+
+                            <a href="orders.html">
+
+                                <i class="fa-solid fa-box"></i>
+
+                                <span>
+                                    Orders
+                                </span>
+
+                            </a>
+
+
+                            <a href="wishlist.html">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                                <span>
+                                    Wishlist
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CART -->
+
+                    <a
+                        href="cart.html"
+                        class="nav-icon"
+                        aria-label="Shopping Cart"
+                    >
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         SEARCH OVERLAY
+    ========================================== -->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+    >
+
+        <div class="search-overlay-inner">
+
+
+            <!-- SEARCH HEADER -->
+
+            <div class="search-header">
+
+                <span class="search-label">
+                    SEARCH LUNEA
+                </span>
+
+                <button
+                    type="button"
+                    class="search-close"
+                    id="searchClose"
+                    aria-label="Close Search"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- SEARCH INPUT -->
+
+            <div class="search-input-wrapper">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products, collections, ingredients..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    class="search-clear"
+                    id="searchClear"
+                    aria-label="Clear Search"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- SEARCH SUGGESTIONS -->
+
+            <div
+                class="search-suggestions"
+                id="searchSuggestions"
+            >
+
+                <p class="search-suggestions-title">
+                    Popular Searches
+                </p>
+
+                <div class="search-tags">
+
+                    <button
+                        type="button"
+                        data-search="Hydrating Serum"
+                    >
+                        Hydrating Serum
+                    </button>
+
+                    <button
+                        type="button"
+                        data-search="Vitamin C"
+                    >
+                        Vitamin C
+                    </button>
+
+                    <button
+                        type="button"
+                        data-search="Calm Collection"
+                    >
+                        Calm Collection
+                    </button>
+
+                    <button
+                        type="button"
+                        data-search="Hyaluronic Acid"
+                    >
+                        Hyaluronic Acid
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH RESULTS -->
+
+            <div
+                class="search-results"
+                id="searchResults"
+            ></div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="search-no-results"
+                id="searchNoResults"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <h3>
+                    No results found
+                </h3>
+
+                <p>
+                    Try searching for another product, collection, or ingredient.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =========================================
+             ACCOUNT HERO
+        ========================================== -->
+
+        <section class="account-hero">
+
+            <div class="container">
+
+                <div class="account-hero-content">
+
+                    <span class="account-eyebrow">
+                        YOUR LUNEA PROFILE
+                    </span>
+
+                    <h1>
+                        My Account
+                    </h1>
+
+                    <p>
+                        Keep your personal details and delivery information
+                        ready for your next LUNEA ritual.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ACCOUNT CONTENT
+        ========================================== -->
+
+        <section class="account-section">
+
+            <div class="container">
+
+                <div class="account-layout">
+
+
+                    <!-- =================================
+                         ACCOUNT SIDEBAR
+                    ================================== -->
+
+                    <aside class="account-sidebar">
+
+                        <div class="account-sidebar-icon">
+
+                            <i class="fa-regular fa-user"></i>
+
+                        </div>
+
+                        <h2 id="profileNameDisplay">
+                            Your Profile
+                        </h2>
+
+                        <p id="profileEmailDisplay">
+                            Add your details below
+                        </p>
+
+
+                        <nav class="account-sidebar-nav">
+
+                            <a
+                                href="account.html"
+                                class="account-sidebar-link active"
+                            >
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <span>
+                                    Personal Details
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="orders.html"
+                                class="account-sidebar-link"
+                            >
+
+                                <i class="fa-solid fa-box"></i>
+
+                                <span>
+                                    My Orders
+                                </span>
+
+                            </a>
+
+
+                            <a
+                                href="wishlist.html"
+                                class="account-sidebar-link"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                                <span>
+                                    My Wishlist
+                                </span>
+
+                            </a>
+
+                        </nav>
+
+                    </aside>
+
+
+                    <!-- =================================
+                         PROFILE FORM
+                    ================================== -->
+
+                    <div class="account-main">
+
+
+                        <!-- PROFILE HEADER -->
+
+                        <div class="account-card-header">
+
+                            <div>
+
+                                <span class="account-section-label">
+                                    PERSONAL INFORMATION
+                                </span>
+
+                                <h2>
+                                    Your Details
+                                </h2>
+
+                                <p>
+                                    Save your information to make your
+                                    future LUNEA orders easier.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PROFILE FORM -->
+
+                        <form
+                            id="profileForm"
+                            class="profile-form"
+                        >
+
+
+                            <!-- FULL NAME -->
+
+                            <div class="form-group full-width">
+
+                                <label for="fullName">
+                                    Full Name
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-regular fa-user"></i>
+
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        name="fullName"
+                                        placeholder="Enter your full name"
+                                        autocomplete="name"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-regular fa-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Enter your email address"
+                                        autocomplete="email"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-solid fa-phone"></i>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Enter your phone number"
+                                        autocomplete="tel"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ADDRESS -->
+
+                            <div class="form-group full-width">
+
+                                <label for="address">
+                                    Street Address
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <input
+                                        type="text"
+                                        id="address"
+                                        name="address"
+                                        placeholder="Enter your street address"
+                                        autocomplete="street-address"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- CITY -->
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-solid fa-city"></i>
+
+                                    <input
+                                        type="text"
+                                        id="city"
+                                        name="city"
+                                        placeholder="Enter your city"
+                                        autocomplete="address-level2"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- STATE -->
+
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-solid fa-map"></i>
+
+                                    <input
+                                        type="text"
+                                        id="state"
+                                        name="state"
+                                        placeholder="Enter your state"
+                                        autocomplete="address-level1"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- POSTAL CODE -->
+
+                            <div class="form-group">
+
+                                <label for="postalCode">
+                                    Postal Code
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-solid fa-location-crosshairs"></i>
+
+                                    <input
+                                        type="text"
+                                        id="postalCode"
+                                        name="postalCode"
+                                        placeholder="Enter your postal code"
+                                        autocomplete="postal-code"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- COUNTRY -->
+
+                            <div class="form-group">
+
+                                <label for="country">
+                                    Country
+                                </label>
+
+                                <div class="input-wrapper">
+
+                                    <i class="fa-solid fa-globe"></i>
+
+                                    <input
+                                        type="text"
+                                        id="country"
+                                        name="country"
+                                        placeholder="Enter your country"
+                                        autocomplete="country-name"
+                                        value="India"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- FORM ACTIONS -->
+
+                            <div class="profile-form-actions">
+
+                                <button
+                                    type="button"
+                                    id="clearProfile"
+                                    class="btn-secondary"
+                                >
+                                    Clear Details
+                                </button>
+
+                                <button
+                                    type="submit"
+                                    class="btn-primary"
+                                >
+                                    <i class="fa-solid fa-check"></i>
+
+                                    Save Profile
+                                </button>
+
+                            </div>
+
+                        </form>
+
+
+                        <!-- SUCCESS MESSAGE -->
+
+                        <div
+                            class="profile-success"
+                            id="profileSuccess"
+                            role="status"
+                            aria-live="polite"
+                        >
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>
+                                Your profile has been saved successfully.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo"
+                    >
+                        LUNEA
+                    </a>
+
+                    <p class="footer-description">
+                        Thoughtfully crafted skincare collections inspired by
+                        real skin concerns and powerful ingredients.
+                    </p>
+
+                </div>
+
+
+                <!-- FOOTER LINKS -->
+
+                <div class="footer-links">
+
+
+                    <!-- SHOP -->
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Shop
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="products.html">
+                                    Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="index.html#collections">
+                                    Collections
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="cart.html">
+                                    Cart
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- SUPPORT -->
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Shipping
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Returns
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- COMPANY -->
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Company
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <h3>
+                    Stay Connected
+                </h3>
+
+                <p>
+                    Subscribe to receive skincare tips, exclusive offers,
+                    and product updates.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <label
+                        for="newsletter-email"
+                        class="sr-only"
+                    >
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- SOCIAL MEDIA -->
+
+            <div class="footer-social">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Pinterest"
+                >
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="YouTube"
+                >
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 LUNEA. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/account.js"></script>
+
+
+</body>
+
+</html>

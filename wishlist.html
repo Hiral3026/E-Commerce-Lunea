@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>Wishlist | LUNEA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="CSS/wishlist.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+        ANNOUNCEMENT BAR
+    ========================================= -->
+
+    <div class="announcement-bar">
+
+        <div class="announcement-track">
+
+            <span>
+                Complimentary shipping on orders above ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+            <span>
+                Complimentary shipping on orders above ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+            <span>
+                Complimentary shipping on orders above ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+        HEADER
+    ========================================= -->
+
+    <header class="header">
+
+        <nav class="navbar" aria-label="Primary Navigation">
+
+            <div class="container">
+
+                <!-- LOGO -->
+
+                <a href="index.html" class="logo">
+                    LUNEA
+                </a>
+
+
+                <!-- NAVIGATION LINKS -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#collections">
+                            Collections
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- =========================================
+                    NAVIGATION ACTIONS
+                ========================================= -->
+
+                <div class="nav-actions">
+
+
+                    <!-- SEARCH -->
+
+                    <div class="search-container">
+
+                        <button
+                            type="button"
+                            class="nav-icon search-toggle"
+                            aria-label="Open Search"
+                            aria-expanded="false"
+                        >
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- ACCOUNT -->
+
+                    <div class="account-dropdown">
+
+                        <button
+                            type="button"
+                            class="nav-icon account-toggle"
+                            aria-label="Account"
+                            aria-expanded="false"
+                        >
+
+                            <i class="fa-regular fa-user"></i>
+
+                        </button>
+
+
+                        <!-- ACCOUNT MENU -->
+
+                        <div class="account-menu">
+
+                            <a href="orders.html">
+
+                                <i class="fa-solid fa-box"></i>
+
+                                <span>
+                                    Orders
+                                </span>
+
+                            </a>
+
+
+                            <a href="account.html">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <span>
+                                    My Account
+                                </span>
+
+                            </a>
+
+
+                            <a href="wishlist.html">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                                <span>
+                                    Wishlist
+                                </span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CART -->
+
+                    <a
+                        href="cart.html"
+                        class="nav-icon"
+                        aria-label="Shopping Cart"
+                    >
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+        SEARCH OVERLAY
+    ========================================= -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-overlay-inner">
+
+
+            <!-- Search Header -->
+
+            <div class="search-header">
+
+                <span class="search-label">
+                    SEARCH LUNEA
+                </span>
+
+                <button
+                    type="button"
+                    class="search-close"
+                    id="searchClose"
+                    aria-label="Close Search"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- Search Input -->
+
+            <div class="search-input-wrapper">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products, collections, ingredients..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    class="search-clear"
+                    id="searchClear"
+                    aria-label="Clear Search"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- Search Suggestions -->
+
+            <div
+                class="search-suggestions"
+                id="searchSuggestions"
+            >
+
+                <p class="search-suggestions-title">
+                    Popular Searches
+                </p>
+
+                <div class="search-tags">
+
+                    <button
+                        type="button"
+                        data-search="Hydrating Serum"
+                    >
+                        Hydrating Serum
+                    </button>
+
+                    <button
+                        type="button"
+                        data-search="Vitamin C"
+                    >
+                        Vitamin C
+                    </button>
+
+                    <button
+                        type="button"
+                        data-search="Calm Collection"
+                    >
+                        Calm Collection
+                    </button>
+
+                    <button
+                        type="button"
+                        data-search="Hyaluronic Acid"
+                    >
+                        Hyaluronic Acid
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Search Results -->
+
+            <div
+                class="search-results"
+                id="searchResults"
+            ></div>
+
+
+            <!-- No Results -->
+
+            <div
+                class="search-no-results"
+                id="searchNoResults"
+            >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <h3>
+                    No results found
+                </h3>
+
+                <p>
+                    Try searching for another product, collection, or ingredient.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+        MAIN
+    ========================================= -->
+
+    <main>
+
+
+        <!-- =========================================
+            WISHLIST HERO
+        ========================================= -->
+
+        <section class="wishlist-hero">
+
+            <div class="container">
+
+                <div class="wishlist-hero-content">
+
+                    <span class="wishlist-eyebrow">
+                        YOUR LUNEA RITUAL
+                    </span>
+
+                    <h1>
+                        Your Wishlist
+                    </h1>
+
+                    <p>
+                        A collection of the skincare rituals you've saved for later.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+            WISHLIST CONTENT
+        ========================================= -->
+
+        <section class="wishlist-section">
+
+            <div class="container">
+
+
+                <!-- Wishlist Header -->
+
+                <div class="wishlist-header">
+
+                    <div class="wishlist-heading">
+
+                        <h2>
+                            Saved for You
+                        </h2>
+
+                        <span
+                            class="wishlist-count"
+                            id="wishlistCount"
+                        >
+                            0 ITEMS
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="clear-wishlist"
+                        id="clearWishlist"
+                    >
+                        Clear Wishlist
+                    </button>
+
+                </div>
+
+
+                <!-- Wishlist Items -->
+
+                <div
+                    class="wishlist-grid"
+                    id="wishlistGrid"
+                ></div>
+
+
+                <!-- Empty Wishlist -->
+
+                <div
+                    class="wishlist-empty"
+                    id="wishlistEmpty"
+                >
+
+                    <div class="empty-wishlist-icon">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                    <h3>
+                        Your wishlist is waiting.
+                    </h3>
+
+                    <p>
+                        Save the skincare rituals you love and
+                        they'll appear here.
+                    </p>
+
+                    <a
+                        href="products.html"
+                        class="wishlist-shop-button"
+                    >
+                        Explore Products
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+        FOOTER
+    ========================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <!-- Footer Top -->
+
+            <div class="footer-top">
+
+
+                <!-- Brand -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="footer-logo"
+                    >
+                        LUNEA
+                    </a>
+
+                    <p class="footer-description">
+                        Thoughtfully crafted skincare collections inspired by
+                        real skin concerns and powerful ingredients.
+                    </p>
+
+                </div>
+
+
+                <!-- Footer Links -->
+
+                <div class="footer-links">
+
+
+                    <!-- Shop -->
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Shop
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="products.html">
+                                    Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="index.html#collections">
+                                    Collections
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="cart.html">
+                                    Cart
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Support -->
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Shipping
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Returns
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Company -->
+
+                    <div class="footer-column">
+
+                        <h3>
+                            Company
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="about.html">
+                                    About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Newsletter -->
+
+            <div class="footer-newsletter">
+
+                <h3>
+                    Stay Connected
+                </h3>
+
+                <p>
+                    Subscribe to receive skincare tips, exclusive offers,
+                    and product updates.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <label
+                        for="newsletter-email"
+                        class="sr-only"
+                    >
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Enter your email"
+                        aria-label="Email Address"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Social Media -->
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+
+            <!-- Copyright -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 LUNEA. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+        JAVASCRIPT
+    ========================================= -->
+
+    <!-- JavaScript Files -->
+        <script src="js/main.js"></script>
+        <script src="js/wishlist.js"></script>
+
+</body>
+
+</html>

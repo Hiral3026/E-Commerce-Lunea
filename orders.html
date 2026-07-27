@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================
+         META INFORMATION
+    ========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        My Orders | LUNEA Premium Skincare
+    </title>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         FONT AWESOME
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="CSS/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="CSS/cart.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="CSS/orders.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+
+        <nav
+            class="navbar"
+            aria-label="Primary Navigation"
+        >
+
+            <div class="container">
+
+
+                <!-- =================================
+                     LOGO
+                ================================== -->
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    LUNEA
+                </a>
+
+
+
+                <!-- =================================
+                     NAVIGATION
+                ================================== -->
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="products.html">
+                            Shop
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html#collections">
+                            Collections
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+                <!-- =================================
+                     NAVIGATION ACTIONS
+                ================================== -->
+
+                <div class="nav-actions">
+
+
+                    <!-- =================================
+                         SEARCH
+                    ================================== -->
+
+                    <button
+                        type="button"
+                        class="nav-icon"
+                        aria-label="Search"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </button>
+
+
+
+                    <!-- =================================
+                         ACCOUNT DROPDOWN
+                    ================================== -->
+
+                    <div class="account-dropdown">
+
+
+                        <!-- ACCOUNT BUTTON -->
+
+                        <button
+                            type="button"
+                            class="nav-icon account-toggle"
+                            aria-label="Account"
+                            aria-expanded="false"
+                        >
+
+                            <i class="fa-regular fa-user"></i>
+
+                        </button>
+
+
+
+                        <!-- ACCOUNT MENU -->
+
+                        <div class="account-menu">
+
+
+                            <!-- ORDERS -->
+
+                            <a
+                                href="orders.html"
+                            >
+
+                                <i class="fa-solid fa-box"></i>
+
+                                <span>
+                                    Orders
+                                </span>
+
+                            </a>
+
+
+
+                            <!-- MY ACCOUNT -->
+
+                            <a
+                                href="about.html"
+                            >
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <span>
+                                    My Account
+                                </span>
+
+                            </a>
+
+
+
+                            <!-- WISHLIST -->
+
+                            <a
+                                href="wishlist.html"
+                            >
+
+                                <i class="fa-regular fa-heart"></i>
+
+                                <span>
+                                    Wishlist
+                                </span>
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         WISHLIST
+                    ================================== -->
+
+                    <a
+                        href="wishlist.html"
+                        class="nav-icon"
+                        aria-label="Wishlist"
+                    >
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </a>
+
+
+
+                    <!-- =================================
+                         SHOPPING CART
+                    ================================== -->
+
+                    <a
+                        href="cart.html"
+                        class="nav-icon"
+                        aria-label="Shopping Cart"
+                    >
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span
+                            class="cart-count"
+                            id="cartCount"
+                        >
+                            0
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =========================================
+             ORDERS HERO
+        ========================================== -->
+
+        <section class="orders-hero">
+
+            <div class="container">
+
+                <div class="orders-hero-content">
+
+
+                    <span class="section-tag">
+                        YOUR LUNEA JOURNEY
+                    </span>
+
+
+                    <h1>
+                        My Orders
+                    </h1>
+
+
+                    <p>
+                        View and manage your previous
+                        LUNEA skincare orders.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ORDERS SECTION
+        ========================================== -->
+
+        <section class="orders-section">
+
+            <div class="container">
+
+
+                <!-- =================================
+                     ORDERS HEADER
+                ================================== -->
+
+                <div class="orders-section-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            ORDER HISTORY
+                        </span>
+
+                        <h2>
+                            Your LUNEA Orders
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     ORDERS CONTAINER
+
+                     JavaScript will insert
+                     previous orders here.
+                ================================== -->
+
+                <div
+                    class="orders-container"
+                    id="ordersContainer"
+                >
+
+                    <!-- Orders will be displayed here -->
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 LUNEA.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <!-- Cart System -->
+
+    <script src="js/cart.js"></script>
+
+
+    <!-- Orders System -->
+
+    <script src="js/orders.js"></script>
+
+
+    <!-- Account Dropdown -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                const accountToggle =
+                    document.querySelector(
+                        ".account-toggle"
+                    );
+
+
+                const accountDropdown =
+                    document.querySelector(
+                        ".account-dropdown"
+                    );
+
+
+                if (
+                    accountToggle &&
+                    accountDropdown
+                ) {
+
+
+                    accountToggle.addEventListener(
+                        "click",
+                        function (event) {
+
+                            event.stopPropagation();
+
+
+                            accountDropdown.classList.toggle(
+                                "active"
+                            );
+
+
+                            const isOpen =
+                                accountDropdown.classList.contains(
+                                    "active"
+                                );
+
+
+                            accountToggle.setAttribute(
+                                "aria-expanded",
+                                isOpen
+                            );
+
+                        }
+                    );
+
+
+
+                    // Close dropdown
+                    // when clicking outside
+
+                    document.addEventListener(
+                        "click",
+                        function (event) {
+
+
+                            if (
+                                !accountDropdown.contains(
+                                    event.target
+                                )
+                            ) {
+
+                                accountDropdown.classList.remove(
+                                    "active"
+                                );
+
+
+                                accountToggle.setAttribute(
+                                    "aria-expanded",
+                                    "false"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

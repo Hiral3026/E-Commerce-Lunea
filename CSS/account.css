@@ -1,0 +1,583 @@
+/* =========================================================
+   LUNEA ACCOUNT PAGE
+========================================================= */
+
+
+/* =========================================================
+   ACCOUNT HERO
+========================================================= */
+
+.account-hero {
+    padding: 100px 0 90px;
+    background: #F2E9DE;
+    text-align: center;
+}
+
+.account-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.account-eyebrow {
+    display: block;
+    margin-bottom: 18px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #8B6F61;
+}
+
+.account-hero h1 {
+    margin: 0 0 20px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: 600;
+
+    line-height: 1;
+
+    color: #2D2926;
+}
+
+.account-hero p {
+    max-width: 600px;
+    margin: 0 auto;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #6F6863;
+}
+
+
+/* =========================================================
+   ACCOUNT SECTION
+========================================================= */
+
+.account-section {
+    padding: 100px 0;
+    background: #FAF8F5;
+}
+
+.account-layout {
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   ACCOUNT SIDEBAR
+========================================================= */
+
+.account-sidebar {
+    padding: 35px 30px;
+
+    background: #F2E9DE;
+
+    position: sticky;
+    top: 120px;
+}
+
+.account-sidebar-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #FAF8F5;
+
+    color: #8B6F61;
+
+    font-size: 24px;
+}
+
+.account-sidebar h2 {
+    margin: 0 0 8px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #2D2926;
+}
+
+.account-sidebar p {
+    margin: 0 0 30px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+
+    color: #77706B;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   SIDEBAR NAVIGATION
+========================================================= */
+
+.account-sidebar-nav {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid rgba(45, 41, 38, 0.12);
+}
+
+.account-sidebar-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid rgba(45, 41, 38, 0.12);
+
+    color: #6F6863;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.account-sidebar-link i {
+    width: 18px;
+}
+
+.account-sidebar-link:hover,
+.account-sidebar-link.active {
+    color: #2D2926;
+    padding-left: 5px;
+}
+
+
+/* =========================================================
+   ACCOUNT MAIN
+========================================================= */
+
+.account-main {
+    background: #FFFFFF;
+
+    padding: 55px;
+
+    border: 1px solid rgba(45, 41, 38, 0.08);
+
+    box-shadow:
+        0 20px 50px rgba(45, 41, 38, 0.05);
+}
+
+
+/* =========================================================
+   ACCOUNT CARD HEADER
+========================================================= */
+
+.account-card-header {
+    padding-bottom: 35px;
+
+    margin-bottom: 35px;
+
+    border-bottom: 1px solid rgba(45, 41, 38, 0.1);
+}
+
+.account-section-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8B6F61;
+}
+
+.account-card-header h2 {
+    margin: 0 0 10px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 600;
+
+    color: #2D2926;
+}
+
+.account-card-header p {
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #77706B;
+}
+
+
+/* =========================================================
+   PROFILE FORM
+========================================================= */
+
+.profile-form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #3D3834;
+}
+
+
+/* =========================================================
+   INPUT WRAPPER
+========================================================= */
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.input-wrapper i {
+    position: absolute;
+
+    left: 18px;
+
+    font-size: 14px;
+
+    color: #9A8C83;
+
+    pointer-events: none;
+}
+
+.input-wrapper input {
+    width: 100%;
+
+    min-height: 54px;
+
+    padding: 0 18px 0 48px;
+
+    border: 1px solid rgba(45, 41, 38, 0.15);
+
+    background: #FAF8F5;
+
+    border-radius: 0;
+
+    outline: none;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    color: #2D2926;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.input-wrapper input::placeholder {
+    color: #AAA29C;
+}
+
+.input-wrapper input:focus {
+    border-color: #8B6F61;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 0 0 3px rgba(139, 111, 97, 0.08);
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+.profile-form-actions {
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-top: 15px;
+
+    margin-top: 10px;
+
+    border-top: 1px solid rgba(45, 41, 38, 0.1);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.btn-secondary {
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    border: 1px solid rgba(45, 41, 38, 0.2);
+
+    background: transparent;
+
+    color: #4A443F;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #F2E9DE;
+
+    border-color: #F2E9DE;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.btn-primary {
+    min-height: 50px;
+
+    padding: 0 28px;
+
+    border: 1px solid #2D2926;
+
+    background: #2D2926;
+
+    color: #FFFFFF;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #8B6F61;
+
+    border-color: #8B6F61;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.profile-success {
+    display: none;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    padding: 16px 20px;
+
+    background: #EEF5EF;
+
+    border: 1px solid #D4E5D5;
+
+    color: #4E7151;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+}
+
+.profile-success.show {
+    display: flex;
+
+    animation: profileSuccessIn 0.4s ease;
+}
+
+.profile-success i {
+    font-size: 18px;
+}
+
+@keyframes profileSuccessIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .account-layout {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .account-sidebar {
+        position: static;
+    }
+
+    .account-sidebar-nav {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px;
+
+        border-top: none;
+    }
+
+    .account-sidebar-link {
+        border: 1px solid rgba(45, 41, 38, 0.12);
+
+        padding: 14px;
+
+        justify-content: center;
+    }
+
+    .account-sidebar-link:hover,
+    .account-sidebar-link.active {
+        padding-left: 14px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .account-hero {
+        padding: 70px 20px;
+    }
+
+    .account-section {
+        padding: 60px 20px;
+    }
+
+    .account-main {
+        padding: 30px 20px;
+    }
+
+    .profile-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .profile-form-actions {
+        grid-column: auto;
+
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    .account-sidebar-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .account-sidebar-link {
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .account-hero h1 {
+        font-size: 48px;
+    }
+
+    .account-card-header h2 {
+        font-size: 34px;
+    }
+
+}

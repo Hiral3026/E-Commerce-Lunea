@@ -21,37 +21,72 @@
 
           <!-- CSS Files -->
            <link rel="stylesheet" href="CSS/style.css">
-           <link rel="stylesheet" href="CSS/cart.css">
-           <link rel="stylesheet" href="CSS/products.css">
-           <link rel="stylesheet" href="CSS/responsive.css">
-           <link rel="stylesheet" href="CSS/orders.css">
+
     </head>
 
     <body>
 
-        <!-- Announcement Bar -->
-        <div class="announcement-bar">
-            <div class="announcement-track">
+        <!--  ANNOUNCEMENT BAR -->
 
-                <span>
-                    Complimentary shipping on orders above ₹1,599
-                </span>
+    <div class="announcement-bar">
 
-                <span class="announcement-dot">✦</span>
+        <div class="announcement-track">
 
-                <span>
-                    Complimentary shipping on orders above ₹1,599
-                </span>
+            <span>
+                FREE SHIPPING ON ORDERS OVER $75
+            </span>
 
-                <span class="announcement-dot">✦</span>
+            <span class="announcement-dot">
+                ✦
+            </span>
 
-                <span>
-                    Complimentary shipping on orders above ₹1,599
-                </span>
+            <span>
+                DISCOVER THE LUNEA RITUAL
+            </span>
 
-                <span class="announcement-dot">✦</span>
+            <span class="announcement-dot">
+                ✦
+            </span>
 
-            </div>
+            <span>
+                MINDFUL SKINCARE, BEAUTIFULLY SIMPLE
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+
+            <!-- Duplicate for seamless animation -->
+
+            <span>
+                FREE SHIPPING ON ORDERS OVER ₹1,599
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+            <span>
+                DISCOVER THE LUNEA RITUAL
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+            <span>
+                MINDFUL SKINCARE, BEAUTIFULLY SIMPLE
+            </span>
+
+            <span class="announcement-dot">
+                ✦
+            </span>
+
+        </div>
+
+    </div>
+
         </div>
 
         <!-- Header Section -->
@@ -95,14 +130,23 @@
 
                         <div class="nav-actions">
 
-                            <!-- SEARCH -->
-                            <a
-                                href="#"
-                                class="nav-icon"
-                                aria-label="Search"
-                            >
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
+                            <!-- =====================================
+                                SEARCH
+                            ====================================== -->
+
+                            <div class="search-container">
+
+                                <!-- Search Button -->
+                                <button
+                                    type="button"
+                                    class="nav-icon search-toggle"
+                                    aria-label="Open Search"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+
+                            </div>
 
 
                             <!-- =====================================
@@ -193,6 +237,121 @@
                         </div>
 
          </header>
+
+         <!-- =========================================
+                SEARCH OVERLAY
+            ========================================= -->
+
+            <div class="search-overlay" id="searchOverlay">
+
+                <div class="search-overlay-inner">
+
+                    <!-- Search Header -->
+
+                    <div class="search-header">
+
+                        <span class="search-label">
+                            SEARCH LUNEA
+                        </span>
+
+                        <button
+                            type="button"
+                            class="search-close"
+                            id="searchClose"
+                            aria-label="Close Search"
+                        >
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Search Input -->
+
+                    <div class="search-input-wrapper">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search products, collections, ingredients..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="button"
+                            class="search-clear"
+                            id="searchClear"
+                            aria-label="Clear Search"
+                        >
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- Search Suggestions -->
+
+                    <div class="search-suggestions" id="searchSuggestions">
+
+                        <p class="search-suggestions-title">
+                            Popular Searches
+                        </p>
+
+                        <div class="search-tags">
+
+                            <button type="button" data-search="Hydrating Serum">
+                                Hydrating Serum
+                            </button>
+
+                            <button type="button" data-search="Vitamin C">
+                                Vitamin C
+                            </button>
+
+                            <button type="button" data-search="Calm Collection">
+                                Calm Collection
+                            </button>
+
+                            <button type="button" data-search="Hyaluronic Acid">
+                                Hyaluronic Acid
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Search Results -->
+
+                    <div
+                        class="search-results"
+                        id="searchResults"
+                    ></div>
+
+
+                    <!-- No Results -->
+
+                    <div
+                        class="search-no-results"
+                        id="searchNoResults"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <h3>
+                            No results found
+                        </h3>
+
+                        <p>
+                            Try searching for another product, collection, or ingredient.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         <!-- Main Section -->
           <main>
@@ -1623,13 +1782,7 @@
         </footer>
         
         <!-- JavaScript Files -->
-         <script src="js/cart.js"></script>
-         <script src="js/checkout.js"></script>
          <script src="js/main.js"></script>
-         <script src="js/products.js"></script>
-         <script src="js/ui.js"></script>
-         <script src="js/wishlist.js"></script>
-
     </body>
 
 </html>
